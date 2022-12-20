@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static', filename='css/content.css') }}">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="content-container">
+<div class="input-field">
+    <form >
+        <input type="text" name="q" class="q" placeholder="Enter name...">
+    </form>
+    <button class="submit">Submit</button>
+
+    <div class="buttons">
+        <button class="male" value="2">Male</button>
+        <button class="female" value="1">Female</button>
+        <button class="both" value="0">Both</button>
+
+    </div>
+</div>
+
+<div class="names-field">
+    <table>
+        <thead>
+        <tr>
+            <td>Name</td>
+            <td>Description</td>
+        </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+    </table>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='javascript/function.js') }}"></script>
+{% endblock %}

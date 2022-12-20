@@ -1,0 +1,33 @@
+body{
+    background-color: #eeeeee;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px 25px;
+    background: #A0E4CB;
+    color: white;
+    box-shadow: 2px 2px 2px gray;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container > h3{
+    font-family: Pacifico, cursive;
+    color: #850000;
+}
+.links-container{
+    font-family: Teko, "sans-serif";
+    font-size: 18px;
+}

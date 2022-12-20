@@ -1,0 +1,79 @@
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 25px 75px;
+    box-sizing: border-box;
+
+}
+
+.input-field{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 70% 30%;
+    grid-row-gap: 10px;
+    min-width: 400px;
+    width: 600px;
+    padding: 10px;
+    background: #707070;
+    box-shadow: 2px 2px 2px black;
+}
+.submit{
+    border: none;
+    background: #F9ED69;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+
+form{
+    display: inline;
+}
+.q{
+    height: 30px;
+    width: 90%;
+    padding: 10px 10px;
+    border-radius: 7px;
+}
+
+.buttons{
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-around;
+    width: 90%
+}
+.buttons > *{
+    width: 70px;
+    background: orange;
+    border: none;
+    padding: 0;
+    font-family: "Pacifico", cursive;
+    font-size: 13px;
+    transform: scale(.8);
+    color: #FAF7F0;
+}
+
+.names-field{
+    display: grid;
+    padding: 10px 0;
+    width: 600px;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px 10px;
+    width: 100%;
+}
+thead{
+    background-color: #F3ECB0;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 5px 20px;
+}
